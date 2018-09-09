@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+<head>
+	<title>KTEO</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="http://icons.iconarchive.com/icons/graphicloads/polygon/16/car-icon.png">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	
+	<!-- Navigation Bar (MENU) -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#myPage">ΚΤΕΟ</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#places">Σημεία Εξυπηρέτησης</a></li>
+					<li><a href="#instructions">Οδηγίες Συντήρησης</a></li>
+					<li><a href="#rules">Κανόνες Λειτουργίας</a></li>
+					<li><a href="#pricing">Τιμές</a></li>
+					<li><a href="#whenKTEO">Πότε περνάω ΚΤΕΟ</a></li>
+					<li><a href="#login" id="signIn">SIGN IN</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Container (About Section) -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<br>
+				<h2>Πληροφοριες</h2>
+				<h3><b>Εγκαταστάσεις</b></h3>
+				<h4 style="text-align: justify;">Η εταιρία μας διαθέτει υπερσύγχρονες και εύκολα προσβάσιμες εγκαταστάσεις.
+					Οι πρώτοι σταθμοί ΚΤΕΟ στην Ελλάδα που διαθέτουν 6 αυτόματες γραμμές ελέγχου.
+				Στα πλεονεκτήματα επίσης περιλαμβάνονται οι αίθουσες αναμονής με μοντέρνα και φιλική σχεδίαση, ειδικά για να φιλοξενούν τους κατόχους των οχημάτων κατά τη διάρκεια ελέγχου δημιουργώντας έτσι τις προϋποθέσεις για την άνετη και πάνω από όλα ασφαλή και αξιοπρεπή παραμονή τους στο χώρο.</h4>
+
+				<h3><b>Πιστοποιήσεις και υπηρεσίες</b></h3>
+				<h4 style="text-align: justify;">Οι πρότυποι σταθμοί ΚΤΕΟ της εταιρίας πιστοποιούνται υπό πολύ αυστηρές προϋποθέσεις και κριτήρια από το ΥΜΕ και ΕΣΥΔ (εθνικό σύστημα διαπίστευσης). Λειτουργούμε ως ανεξάρτητος πιστοποιημένος φορέας τεχνικού ελέγχου οχημάτων και εκδίδουμε, επίσημο δελτίο τεχνικού ελέγχου ΚΤΕΟ, κάρτα καυσαερίων, ενώ παράλληλα προσφέρουμε τη δυνατότητα στους οδηγούς να πραγματοποιήσουν έναν εκούσιο – προληπτικό τεχνικό έλεγχο σε περιπτώσεις όπως, πριν από ένα μεγάλο ταξίδι, αγοράς ή πώλησης ενός οχήματος και πριν ή μετά από επισκευές – service οχήματος, εκδίδοντας τους πιστοποιητικό καλής και ασφαλής λειτουργίας.
+				</h4>
+
+				<h3><b>Εξοπλισμός</b></h3>
+				<h4 style="text-align: justify;">Όλοι οι σταθμοί μας διαθέτουν τελευταίας τεχνολογίας εξοπλισμό από κορυφαίες στον κόσμο εταιρείες.
+				Οι πρότυποι σταθμοί ΚΤΕΟ της εταιρίας μας πιστοποιούνται υπό πολύ αυστηρές προϋποθέσεις και κριτήρια από το ΥΜΕ και ΕΣΥΔ (εθνικό σύστημα διαπίστευσης).</h4>
+
+			</div>
+			<div class="col-sm-4" style="margin-top: 10%;padding-left: 10%">
+				<span class="glyphicon glyphicon-cog logo"></span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container (Places Section) -->
+	<div id="places" class="container-fluid bg-grey">
+		<div class="row">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-globe logo slideanim"></span>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+				<h3>Αθήνα</h3>
+				<h5>Λεωφ. Αθηνών 107</h5>
+				<h5>(παλαιά Λεωφ. Καβάλας)</h5>
+				<h5>Τ.Κ 104 47, Αθήνα</h5>	
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+				<h3>Πειραιάς</h3>
+				<h5>Λεωφ. Κηφισού 88</h5>
+				<h5>(Έξοδος από οδό Πειραιώς προς Λαμία)</h5>
+				<h5> Τ.Κ 183 46, Μοσχάτο</h5>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+				<h3>Θεσσαλονίκη</h3>
+				<h5>Αγ. Αναστασίας 13</h5>
+				<h5>(δίπλα στο Mediterranean Cosmos και στο Magic Park)</h5>
+				<h5> Τ.Κ 570 01, Πυλαία</h5>	
+			</div>
+		</div>
+	</div>
+
+	<!-- Container (Instructions Section) -->
+	<div id="instructions" class="container-fluid text-center">
+		<h2>Οδηγιες Συντηρησης</h2>
+		<div class="container text-center">
+			<div class="row">
+				<h3><b>5 απλοί έλεγχοι που μπορείτε να κάνετε μόνοι σας</b></h3>
+				<h4 class="col-lg-12" style="text-align: justify;">Το πιο σημαντικό πράγμα που μπορείτε να κάνετε για να μειώσετε το ρίσκο να χαλάσει το αυτοκίνητο σας, είναι να του κάνετε σέρβις σύμφωνα με το πρόγραμμα και τις προδιαγραφές του εγχειρίδιου του κατασκευαστή. Εκτός όμως από το τακτικό σέρβις, ακολουθείστε τις παρακάτω συμβουλές για να απολαύσετε την οδήγηση χωρίς έγνοιες και φόβους</h4>
+			</div>
+		</div>
+		<br>
+		<div class="row slideanim">
+			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+				<h3><b>1. ΕΛΑΣΤΙΚΑ</b></h3>
+				<p style="text-align: justify;">Ενημερωθείτε για τη σωστή πίεση που πρέπει να έχουν τα λάστιχα σας και ελέγχετέ την τουλάχιστον κάθε 15 ημέρες χρησιμοποιώντας καλής ποιότητας μετρητή ή μετρητή αέρα συνεργείου. Ελέγξτε το πέλμα και την κατάσταση των ελαστικών, ψάξτε για αμυχές στα πλαϊνά της ρόδας. Αν κάποιο από τα λάστιχα χρειάζεται τακτικά φούσκωμα, μπορεί να έχει κάποια μικρή τρύπα. Μην ξεχνάτε να ελέγχετε και την ρεζέρβα.</p>
+			</div>
+			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+				<h3><b>2. ΛΑΔΙ ΜΗΧΑΝΗΣ</b></h3>
+				<p style="text-align: justify;">Ελέγχετε τον μετρητή του λαδιού κάθε 15 ημέρες και πριν από κάθε ταξίδι. Αλλάζετε τακτικά το λάδι και το φίλτρο σύμφωνα με τις προδιαγραφές του κατασκευαστή, χρησιμοποιώντας το κατάλληλο λάδι. Η μεγάλη κατανάλωση λαδιού είναι ένδειξη ότι υπάρχει πρόβλημα στη μηχανή.</p>
+			</div>
+			<div class="clearfix visible-sm"></div>
+			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+				<h3><b>3. ΤΟ ΑΜΑΞΩΜΑ</b></h3>
+				<p style="text-align: justify;">Σε περίπτωση που υπάρχει ζημιά στο αμάξωμα του αυτοκινήτου, επισκευάστε το άμεσα πριν δημιουργηθεί σκουριά. Πολλά αυτοκίνητα έχουν εγγύηση αμαξώματος, το οποίο απαιτεί αυτοψία και έλεγχο στην αντιπροσωπεία κάθε χρόνο. Ελέγξτε αν ο προηγούμενος ιδιοκτήτης έχει κρατήσει φάκελο με το ιστορικό των ελέγχων που έχουν γίνει στο αυτοκίνητο.</p>
+			</div>
+			<div class="clearfix visible-lg"></div>
+			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+				<h3><b>4. ΝΕΡΟ</b></h3>
+				<p style="text-align: justify;">Ελέγχετε τη στάθμη του ψυκτικού υγρού (νερού) τακτικά και συμπληρώστε όποτε χρειάζεται, όταν η μηχανή είναι κρύα. Ελέγξτε πριν τον χειμώνα την συγκέντρωση του αντιψυκτικού. Το αντιψυκτικό αποτρέπει την δημιουργία διάβρωσης (σκουριάς) στο ψυκτικό σύστημα και δεν επιτρέπει στο ψυκτικό υγρό να παγώσει, άρα είναι απαραίτητο καθ’ όλη τη διάρκεια του χρόνου.</p>
+			</div>
+			<div class="clearfix visible-md"></div>
+			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+				<h3><b>5. ΕΡΓΑΛΕΙΟΘΗΚΗ</b></h3>
+				<p style="text-align: justify;">Βεβαιωθείτε για τη θέση της βασικής εργαλειοθήκης του αυτοκίνητου. Πρέπει να περιλαμβάνει τουλάχιστον ένα γρύλλο και εργαλεία αφαίρεσης της ρόδας. Γνωρίστε τα σημεία του αυτοκινήτου όπου τοποθετείται ο γρύλλος για την ασφαλή ανύψωση του οχήματος. Σιγουρευτείτε ότι η εργαλειοθήκη περιλαμβάνει κλειδί ή άλλο εργαλείο για την αφαίρεση των μπουλονιών.</p>
+			</div>
+		</div>
+		<br><br>
+		<div class="row slideanim">
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-leaf logo-small"></span>
+				<h4>Μέριμνα για το Περιβάλλον</h4>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-certificate logo-small"></span>
+				<h4>Πιστοποίηση ΥΜΕ & ΕΣΥΔ</h4>
+			</div>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-wrench logo-small"></span>
+				<h4 style="color:#303030;">Σύγχρόνος Εξοπλισμός</h4>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container (Rules Section) -->
+	<div id="rules" class="container-fluid text-center bg-grey">
+		<h2>Κανονες λειτουργιας</h2><br>
+		<div class="row text-center slideanim">
+			<h4><b>Επανέλεγχος και κανόνες:</b></h4>
+			<div class="container text-center">
+				<h4 style="text-align: justify;">
+				Το όχημα σας πρέπει να βρίσκεται στην Εθνική Ενιαία Βάση Οχημάτων και να είναι ασφαλισμένο. Στην περίπτωση που δεν είναι ασφαλισμένο , επιβάλλεται πρόστιμο 200 ευρώ και ζητείται από τον πελάτη να το ασφαλίσει και να επανέρθει.<br><br>Σε περίπτωση που στο όχημά σας διαπιστωθούν σοβαρές ελλείψεις και χρειάζεται επισκευές έχετε στην διάθεση σας 30 ημέρες για τον επανέλεγχο και την έκδοση του δελτίου τεχνικού ελέγχου. Ο τεχνικός διευθυντής μπορεί να σας δώσει 10 ημέρες επιπλέον σε περιπτώσεις που οι επισκευές είναι εκτεταμένες.<br><br>Αν ο πελάτης έρθει εκπρόθεσμα πληρώνει πρόστιμο ίσο με 50% του ποσού που θα πλήρωνε (Δείτε τον παρακάτω πίνακα).
+				</h4>
+			</div>
+		</div><br>
+	</div>
+
+
+	<!-- Container (Pricing Section) -->
+	<div id="pricing" class="container text-center">
+		<div class="text-center">
+			<h2>Τιμες</h2>
+		</div>
+		<div class="row slideanim">
+			<table>
+				<th>Τύπος Οχήματος</th>
+				<th>Ποσό</th>
+				<tr>
+					<td>Επιβατηγό έως 1800cc</td>
+					<td>50€</td>
+				</tr>
+				<tr>
+					<td>Επιβατηγό μεγαλύτερο των 1800cc</td>
+					<td>80€</td>
+				</tr>
+				<tr>
+					<td>Φορτηγό έως 1800cc</td>
+					<td>100€</td>
+				</tr>
+				<tr>
+					<td>Φορτηγό μεγαλύτερο των 1800cc</td>
+					<td>150€</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br>
+
+	<!-- Container (Check KTEO Section) -->
+	<div id="whenKTEO" class="container-fluid text-center bg-grey">
+		<div class="container text-center">
+			<h2>Ποτε περναω ΚΤΕΟ;</h2>
+			<br>
+			<h4>ΕΝΗΜΕΡΩΘΕΙΤΕ ΕΓΚΑΙΡΑ. Πότε πρέπει να περάσετε το όχημα σας από ΚΤΕΟ με 2 κλικ</h4>
+			<div class="field">
+				<label for="elegxos">1. Έχετε ξαναπεράσει ΚΤΕΟ;</label><br>
+				<select name="elegxos" id="type" class="user_select">
+					<option value>Επιλέξτε</option>
+					<option value="Περιοδικός">Ναι</option>
+					<option value="Αρχικός">Όχι</option>
+				</select><br><br>
+				<label id="dateLabel" value=""></label>
+				<form>
+					<input id="datepicker"/>
+				</form>   
+				<br>
+			</div>
+			<h3 id="result"></h3>
+		</div>
+	</div>
+
+	<!-- Container (Login and Sign up Section) -->
+	<div id="login" class="container-fluid text-center">
+		<br>
+		<h3>Συνδεθείτε στον λογαριασμό σας</h3>
+		<br>
+		<form>
+			<label>Username <input type="text" name="myusername" id="myusername"></label>
+			<br/>
+			<label>Password <input type="password" name="mypassword" id="mypassword"></label>
+			<br/>
+			<input type="submit"  class="btn btn-danger btn-lg" name="submit" value="Login">
+ 		</form>
+		<ins id="signUp">Εγγραφείτε αν δεν έχετε ήδη λογαριασμό</ins>
+		<br><br>
+		<div id="signUpShow">
+			<hr />
+			<h3>Εγγραφείτε αν δεν έχετε ήδη λογαριασμό</h3>
+			<form>
+				<label>Username <input type="text" name="myusername" id="myusername"></label>
+				<br/>
+				<label>Password <input type="password" name="mypassword" id="mypassword"></label>
+				<br/>
+				<input type="submit"  class="btn btn-danger btn-lg" name="submit" value="Sign up">
+			 </form>
+		</div>
+	</div>
+
+	<!-- Container (Photos Section) -->
+	<div class="wrapper">
+		<div class="text-center">
+		<h2>Φωτογραφιες</h2>
+		<div align="center" id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-top="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-top="1" ></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="1.jpg" alt="our image 1">
+					<div class="carousel-caption">
+						<h1>ΚΤΕΟ</h1>
+					</div>
+				</div> <!-- End Active -->
+				<div class="item">
+					<img src="2.jpg" alt="our image 2">
+				</div>
+			</div>
+		</div> <!-- End Slider -->
+		<br>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="To Top">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Επικοινωνία</h3>
+				<br>
+				<h4>Τηλέφωνο ραντεβού: 10 20 30</h4>
+				<h4>Fax: 210 34 07 999</h4>
+			</div>
+			<div class="col-sm-4">
+				<h3>Ακολουθήστε μας</h3>
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+				<a href="https://www.google.com" class="fa fa-google"></a>
+				<a href="https://www.youtube.com" class="fa fa-youtube"></a>
+			</div>
+			<div class="col-sm-4">
+				<h3>Ηλεκτρονικές Υπηρεσίες</h3>
+				<br>
+				<a href="makeApp.html" style="font-size: 20px; color: #303030;">Κλείστε ραντεβού online</a><br>
+				<a href="checkApp.html" style="font-size: 20px; color: #303030;">Δείτε το ραντεβού σας</a><br>
+				<a href="checkKteo.html" style="font-size: 20px; color: #303030;">Δείτε το ΚΤΕΟ για τα οχήματα σας</a>
+				</div>
+			</div>
+		</footer>
+	
+	<!-- jQuery Scripts  -->
+	<script>
+	$(document).ready(function(){
+  		// Add smooth scrolling to all links in navbar + footer link
+  		$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    			// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 900, function(){
+
+			// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+				});
+			} // End if
+		});
+  
+		$(window).scroll(function() {
+			$(".slideanim").each(function(){
+				var pos = $(this).offset().top;
+				var winTop = $(window).scrollTop();
+				if (pos < winTop + 600) {
+					$(this).addClass("slide");
+				}
+				});
+			});
+		})
+	</script>
+
+	<script>
+		// change format of datepicker
+		$(document).ready(function() {
+			$("#datepicker").datepicker({ dateFormat: 'yy-mm-dd'});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#datepicker").hide();
+			$("#type").change(function () {
+				var val = $(this).val();
+				if (val == "Περιοδικός") {
+					$("#dateLabel").html("<label> 2. Ημερομηνία (τελευταίου ελέγχου ΚΤΕΟ)</label>");
+				} else if (val == "Αρχικός") {
+					$("#dateLabel").html("<label> 2. Ημερομηνία (1ης άδεια κυκλοφορίας)</label>");
+				}
+				$("#datepicker").show(500);				
+			});
+		});
+	</script>
+
+	<script text="text/javascript">
+		$(document).ready(function(){
+			$("#signUpShow").hide();
+			$("#signUp").click(function(){
+				$("#signUpShow").show(500);
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		// calculate KTEO date
+		$(document).ready(function () {
+			$("#type").change(function () {
+				var val1 = $(this).val();
+				var monthNames = ["January", "February", "March", "April", "May", "June",
+				"July", "August", "September", "October", "November", "December"];
+				$("#datepicker").change(function () { 
+					var val = Date.parse($(this).val());
+					var d = new Date(val)
+					if (val1 == "Περιοδικός") {                    
+						d.setFullYear(d.getFullYear() + 2); 
+					} else if (val1 == "Αρχικός") {  
+						d.setFullYear(d.getFullYear() + 4);               
+					} 
+					d.setDate(d.getDate() + 7);
+					document.getElementById("result").innerHTML = "Περνάτε ΚΤΕΟ: "+d.getDate()+" - "+ monthNames[d.getMonth()]+" - "+d.getFullYear()+""; 
+				});                      
+			});
+		});
+	</script>
+
+</body>
+</html>
